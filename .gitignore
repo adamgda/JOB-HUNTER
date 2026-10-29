@@ -1,0 +1,14 @@
+# lokalny research — trzymaj niepubliczne rzeczy poza gitem
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+logs/
+.run/
+*.db
+backend/*.db
+.env
+backend/.env
+frontend/dist/
+.DS_Store

@@ -1,0 +1,123 @@
+/* Wyłącznie drobne poprawki ponad Mantine */
+
+/* Lekkie kontrolki wierszy tabeli (zamiast ciężkich komponentów Mantine × setki) */
+select.native-status,
+input.native-notes,
+button.btn-row {
+  font-family: inherit;
+  font-size: 12.5px;
+}
+select.native-status {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 999px;
+  color: #e2e8f0;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+select.native-status.s-nowa {
+  color: #7dd3fc;
+}
+select.native-status.s-obejrzana {
+  color: #cbd5f5;
+}
+select.native-status.s-aplikowano {
+  color: #86efac;
+}
+select.native-status.s-odrzucona {
+  color: #fca5a5;
+}
+input.native-notes {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #e2e8f0;
+  padding: 5px 9px;
+  width: 100%;
+}
+button.btn-row {
+  background: transparent;
+  border: 1px solid #334155;
+  color: #cbd5f5;
+  padding: 3px 9px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 11.5px;
+}
+button.btn-row:hover {
+  border-color: #64748b;
+}
+button.btn-row.danger {
+  color: #fca5a5;
+}
+button.btn-row.warn {
+  color: #fbbf24;
+}
+
+.chip {
+  border-radius: 999px;
+  padding: 1px 8px;
+  font-size: 10.5px;
+  background: rgba(103, 232, 249, 0.14);
+  color: #7dd3fc;
+}
+.chip.lang {
+  background: rgba(196, 181, 253, 0.14);
+  color: #c4b5fd;
+}
+
+.dimmed {
+  color: #94a3b8;
+  font-size: 12px;
+}
+thead.thead th {
+  text-align: left;
+  color: #94a3b8;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding: 6px 8px;
+  border-bottom: 1px solid #334155;
+}
+tbody tr td {
+  padding: 8px;
+  border-bottom: 1px solid #223052;
+  vertical-align: middle;
+}
+
+/* Sidebar (navbar): natywne przewijanie — formularz jest wyższy niż ekran,
+   więc bez tego przycisk "Szukaj" i wykluczenia pozostają poza dostępem */
+.mantine-AppShell-navbar {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  scrollbar-width: thin;
+}
+.mantine-AppShell-navbar::-webkit-scrollbar {
+  width: 8px;
+}
+.mantine-AppShell-navbar::-webkit-scrollbar-thumb {
+  background: #444c63;
+  border-radius: 4px;
+}
+
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+}
+
+.wrap-anywhere {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+table.mantine-table td,
+table.mantine-table th {
+  vertical-align: top;
+}

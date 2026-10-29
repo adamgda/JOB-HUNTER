@@ -1,0 +1,1 @@
+"""Moduł wyszukiwania: query builder, silniki, normalizacja."""

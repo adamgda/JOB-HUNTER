@@ -1,0 +1,1 @@
+"""Crawler stron firmowych (faza 2)."""
